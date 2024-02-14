@@ -28,8 +28,10 @@ if not i_buf.isdigit():
 else:
     num1 = i_buf
 
-    operator = input()
-    num2 = input()
+    print("num1:", num1)
+    
+    operator = input("opearator: ")
+    num2 = input("num2: ")
 
 num1 = int (num1)
 num2 = int (num2)
@@ -49,5 +51,5 @@ elif operator == '/':
 elif operator == '%':
     result = num1 % num2
 
-print(f"{num1} {operator} {num2} = {result}")
+print(f"\n{num1} {operator} {num2} = {result}")
 
