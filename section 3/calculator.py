@@ -1,35 +1,33 @@
 
-print("insert the expression.\n\t it have to follow the foward rules <number1> <operator> <number2>\n")
-
-i_buf  = input()
+print("insert the expression. It have to follow the foward rules <number1> <operator> <number2>\n")
 
 operator = ''
 num1 = ""
 num2 = ""
 
-result = ...
+i_buf  = ""
+
+for read in input():
+    if read != ' ':
+        i_buf += read
+
+result = None
 
 if not i_buf.isdigit():
-    i_size = len(i_buf)
-    i = 0
-
-    while i < i_size:
+    for i in range(len(i_buf)):
         if i_buf[i].isdigit():
             if operator == '':
                 num1 += i_buf[i]
             else:
                 num2 += i_buf[i]
 
-        elif i_buf[i] != ' ':
+        elif operator == '':
             operator = i_buf[i]
-
-        i += 1
-
 else:
     num1 = i_buf
 
     print("num1:", num1)
-    
+
     operator = input("opearator: ")
     num2 = input("num2: ")
 
