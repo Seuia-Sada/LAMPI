@@ -23,13 +23,6 @@ if not i_buf.isdigit():
 
         elif operator == '':
             operator = i_buf[i]
-else:
-    num1 = i_buf
-
-    print("num1:", num1)
-
-    operator = input("opearator: ")
-    num2 = input("num2: ")
 
 num1 = int (num1)
 num2 = int (num2)
